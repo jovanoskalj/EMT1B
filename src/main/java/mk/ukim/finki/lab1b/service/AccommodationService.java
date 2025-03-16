@@ -10,8 +10,8 @@ import java.util.Optional;
 public interface AccommodationService {
 
      List<Accommodation> findAll();
-     Optional<Accommodation> findById();
+     Optional<Accommodation> findById(Long id);
      Optional <Accommodation> save (AccommodationDto accommodationDto);
      Optional <Accommodation> update (Long id, AccommodationDto accommodationDto);
-     void delete (Long id, AccommodationDto accommodationDto);
+     void delete (Long id);
 }
